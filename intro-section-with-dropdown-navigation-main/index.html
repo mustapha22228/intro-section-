@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Remote work landing page with dropdown navigation." />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand" aria-label="Snap home">snap</div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <div class="nav-item has-menu">
+            <button class="nav-button" type="button" aria-expanded="false">
+              <span>Features</span>
+              <svg class="chevron" viewBox="0 0 12 12" aria-hidden="true">
+                <path d="M2 4.5 6 8l4-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+              </svg>
+            </button>
+            <div class="dropdown-panel" role="menu" aria-label="Features menu">
+              <a href="#" class="dropdown-item">
+                <span class="dropdown-icon todo"></span>
+                <span>Todo List</span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <span class="dropdown-icon calendar"></span>
+                <span>Calendar</span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <span class="dropdown-icon reminders"></span>
+                <span>Reminders</span>
+              </a>
+              <a href="#" class="dropdown-item">
+                <span class="dropdown-icon planning"></span>
+                <span>Planning</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav-item has-menu">
+            <button class="nav-button" type="button" aria-expanded="false">
+              <span>Company</span>
+              <svg class="chevron" viewBox="0 0 12 12" aria-hidden="true">
+                <path d="M2 4.5 6 8l4-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+              </svg>
+            </button>
+            <div class="dropdown-panel" role="menu" aria-label="Company menu">
+              <a href="#" class="dropdown-item">History</a>
+              <a href="#" class="dropdown-item">Our Team</a>
+              <a href="#" class="dropdown-item">Blog</a>
+            </div>
+          </div>
+
+          <a href="#" class="nav-link">Careers</a>
+          <a href="#" class="nav-link">About</a>
+        </nav>
+
+        <div class="auth-actions">
+          <button class="btn btn-link" type="button">Login</button>
+          <button class="btn btn-outline" type="button">Register</button>
+        </div>
+
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span class="menu-bars"></span>
+        </button>
+      </header>
+
+      <div class="mobile-menu" aria-hidden="true" hidden>
+
+        <div class="mobile-panel">
+          <button class="mobile-close" type="button" aria-label="Close navigation">
+            <span class="close-icon"></span>
+          </button>
+
+          <nav class="mobile-nav" aria-label="Mobile navigation">
+            <div class="mobile-item has-menu">
+              <button class="mobile-item-button" type="button" aria-expanded="false">
+                <span>Features</span>
+                <svg class="chevron" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2 4.5 6 8l4-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+                </svg>
+              </button>
+              <div class="mobile-submenu">
+                <a href="#"><span class="dropdown-icon todo"></span>Todo List</a>
+                <a href="#"><span class="dropdown-icon calendar"></span>Calendar</a>
+                <a href="#"><span class="dropdown-icon reminders"></span>Reminders</a>
+                <a href="#"><span class="dropdown-icon planning"></span>Planning</a>
+              </div>
+            </div>
+
+            <div class="mobile-item has-menu">
+              <button class="mobile-item-button" type="button" aria-expanded="false">
+                <span>Company</span>
+                <svg class="chevron" viewBox="0 0 12 12" aria-hidden="true">
+                  <path d="M2 4.5 6 8l4-3.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"/>
+                </svg>
+              </button>
+              <div class="mobile-submenu">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+                <a href="#">Careers</a>
+                <a href="#">About</a>
+              </div>
+            </div>
+
+            <a href="#" class="mobile-link">Careers</a>
+            <a href="#" class="mobile-link">About</a>
+          </nav>
+
+          <div class="mobile-auth">
+            <button class="btn btn-link" type="button">Login</button>
+            <button class="btn btn-outline" type="button">Register</button>
+          </div>
+        </div>
+      </div>
+
+      <main class="hero">
+        <section class="hero-copy">
+          <h1>
+            Make<br />
+            remote work
+          </h1>
+
+          <p>
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+
+          <button class="cta" type="button">Learn more</button>
+
+          <div class="brand-strip" aria-label="Client logos">
+            <img src="./images/client-databiz.svg" alt="Databiz" />
+            <img src="./images/client-audiophile.svg" alt="Audiophile" />
+            <img src="./images/client-meet.svg" alt="Meet" />
+            <img src="./images/client-maker.svg" alt="Maker" />
+          </div>
+        </section>
+
+        <section class="hero-visual" aria-label="Hero illustration">
+          <img src="./images/image-hero-desktop.png" alt="Person working on a laptop while collaborating remotely" />
+        </section>
+      </main>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
